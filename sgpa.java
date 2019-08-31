@@ -14,7 +14,7 @@ class Student
 { 
     public String s_usn; 
     public String s_name;
-    public int[] arr_credits={4,4,4,4,4};
+    public int[] arr_crDevelopedits={4,4,4,4,4};
     public int[] arr_marks=new int[5];
     public void input()
     {
@@ -28,7 +28,7 @@ class Student
            {
                arr_marks[i]=s.nextInt();
            }public class Main
-{
+Develop{
  public static void main(String[] args)
  {
 
@@ -52,7 +52,7 @@ class Student
    int sum;
    sum=0;
     for(int x=0;x<5;x++)
-   {
+   {Develop
      sum=sum+n[x]*arr_credits[x];
    }
    float sgpa=(float)sum/20;
