@@ -44,7 +44,7 @@ class Student
     for(int k=0;k<5;k++)
      {
        n[k]=(arr_marks[k]/10);
-       if(n[k]!=10 || n[k]!=9 ||n[k]!=10 ||n[k]!=8 ||n[k]!=7 ||n[k]!=6 ||n[k]!=5 ||n[k]!=4 )
+       if(n[k]!=10 || n[k]!=9 ||  n[k]!=8 ||n[k]!=7 ||n[k]!=6 ||n[k]!=5 ||n[k]!=4 )
        {
        n[k]=n[k]+1;
        }
