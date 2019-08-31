@@ -30,7 +30,7 @@ public static void main(String args[])
      for(i=0;i<n;i++)
      {
       Book B[]=new Book[n];
-      B[i]=new Book();Develop
+      B[i]=new Book();
       B[i].read_data();
       B[i].print_data(B[i]);
      }
