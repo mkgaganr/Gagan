@@ -1,5 +1,15 @@
 import java.util.*;
 import java.io.*;
+public class Main
+{
+ public static void main(String[] args)
+ {
+
+  Student s1=new Student();
+  s1.input();
+  s1.display();
+}
+}
 class Student 
 { 
     public String s_usn; 
@@ -17,7 +27,16 @@ class Student
           for(int i=0;i<5;i++)
            {
                arr_marks[i]=s.nextInt();
-           }
+           }public class Main
+{
+ public static void main(String[] args)
+ {
+
+  Student s1=new Student();
+  s1.input();
+  s1.display();
+}
+}
     }
    public void display()
    {
@@ -44,13 +63,4 @@ class Student
 }
 } 
 
-public class Main
-{
- public static void main(String[] args)
- {
 
-  Student s1=new Student();
-  s1.input();
-  s1.display();
-}
-}
