@@ -7,17 +7,17 @@ public class Main
  Scanner s=new Scanner(System.in);
  System.out.println("Kind of account for customers"); 
  System.out.println("1)savings account\n2)current account");
- int c=s.nextInt();
+ int x=s.nextInt();
  System.out.println("Enter the principal amount");
  double p=s.nextDouble();
  System.out.println("Enter time of period");
  double t=s.nextDouble();
  Current c1=new Current(p,t);
-  switch(c)
+  switch(x)
 {
- case 1: c1.sbank();
+ case 1: c1.savbank();
         break;
- case 2: c1.cbank();
+ case 2: c1.curbank();
        break;
  default:System.out.println("Invalid option");
 }
@@ -34,7 +34,7 @@ class Saving
  double a;
  double t;
 
- void sbank()
+ void savbank()
 {
     int ch;
  r=3.000;
@@ -59,11 +59,11 @@ do
        else
        { 
         a=a-w;
-       System.out.println(w+" withrawed succesfully");
+       System.out.println(w+" trnsaction succesfull");
        }
        break;
  case 3:System.exit(0);
-default:System.out.println("Enter valid option");
+default:System.out.println("Entered option is invalid");
 }
 }while(ch!=4); 
 }    
@@ -71,13 +71,13 @@ default:System.out.println("Enter valid option");
 
 class Current extends Saving
 {
-Current(double prin,double time)
+Current(double princ,double time)
 {
- p=prin;
+ p=princ;
  t=time;
 }
     int ch;
- void cbank()
+ void curbank()
 {a=p;
  Scanner s=new Scanner(System.in);
  do
@@ -98,7 +98,7 @@ Current(double prin,double time)
        else
        { 
         a=a-w;
-       System.out.println(w+" withrawed succesfully");
+       System.out.println(w+" transaction succesfull");
        if (a<5000)
       {
            System.out.println("Maintain a minimum balance\nService charge(Rs.200) is imposed");
